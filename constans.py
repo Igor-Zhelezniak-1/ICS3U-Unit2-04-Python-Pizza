@@ -4,6 +4,6 @@
 # Created on: Sept 2021
 # This is constans file
 
-labor = 1
+labor = 0.75
 rent = 1
-materials = 2
+materials = 0.5

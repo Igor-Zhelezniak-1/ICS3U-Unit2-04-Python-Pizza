@@ -10,10 +10,16 @@ import constans
 def main():
     # input
     radius = int(input("Enter a radius of pizza: "))
+
     # process
     cost = constans.labor + constans.rent + radius * constans.materials
+    tax = cost * 0.15
+    total_cost = cost + tax
+
     # output
-    print("The cost of pizza is: {}".format(cost))
+    print("The cost of pizza (without tax) is: ${0:,.2f}".format(cost))
+    print("The tax is: ${0:,.2f}".format(tax))
+    print("Total cost of pizza is: ${0:,.2f}".format(total_cost))
 
 
 if __name__ == "__main__":
